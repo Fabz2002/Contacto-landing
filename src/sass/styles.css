@@ -159,6 +159,8 @@ body {
 }
 .containerSiempreConectados__h1 {
   background: linear-gradient(105.05deg, #FFB21A 10.38%, #FEAE14 55.07%, #FC4741 79.94%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
   font-weight: 700;
   font-size: 9rem;
   line-height: 10rem;
