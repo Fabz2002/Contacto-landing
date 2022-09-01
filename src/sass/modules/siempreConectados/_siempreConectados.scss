@@ -1,0 +1,58 @@
+
+@use "../../utilities/Utilities";
+.dashboard__containerSiempreConectados {
+    @include Utilities.flex-column;
+    min-height: 100vh;
+}
+
+.containerSiempreConectados {
+    // &__img {
+    //     position: absolute;
+    //     z-index: -1;
+    // }
+    &__titulo {
+        max-width: 80rem;
+        margin: 0rem 5rem;
+        justify-content: center;
+    }
+
+    &__h1 {
+        // background: linear-gradient(105.05deg, #FFB21A 10.38%, #FEAE14 55.07%, #FC4741 79.94%);
+        display: inline-block;
+        font-weight: 700;
+        font-size: 9rem;
+        line-height: 10rem;
+        padding-top: 16rem;
+
+    }
+
+    &__containerInversoresAccionistas {
+        margin: 0rem 5rem;
+        margin-top: 41.5rem;
+    }
+}
+
+
+.containerInversoresAccionistas {
+    &__subtitulo {
+        @include Utilities.flex-column;
+        margin-bottom: 10.25rem;
+    }
+
+    &__h2 {
+        font-size: 5rem;
+        @include Utilities.styleNormal-weight700;
+        line-height: 6rem;
+
+    }
+
+    &__info {
+        @include Utilities.flex-row-justifyContentBetween;
+    }
+
+}
+
+
+
+
+

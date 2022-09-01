@@ -1,0 +1,22 @@
+@use "../../utilities/Utilities";
+.dashboard__containerContactoTalento{
+    @include Utilities.flex-column;
+    @include Utilities.config-Containers;
+}
+
+.containerContactoTalento{
+    &__subtitulo {
+        @include Utilities.flex-column;
+        margin-bottom: 10.25rem;
+    }
+
+    &__h2 {
+        font-size: 5rem;
+        @include Utilities.styleNormal-weight700;
+        line-height: 6rem;
+    }
+
+    &__info {
+        @include Utilities.flex-row-justifyContentBetween;
+    }
+}

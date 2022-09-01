@@ -1,0 +1,47 @@
+@use "../../utilities/Utilities";
+.dashboard__containerInformacionCorporativa{
+    @include Utilities.flex-row;
+    margin: 0rem 5rem;
+    @include Utilities.config-Containers;
+    padding-bottom: 6rem;
+}
+
+.containerInformacionCorporativa{
+    &__module{
+        @include Utilities.flex-column-alignItemsCenter-justifyContentCenter;
+        background-color: #EDEDED;
+        width: 100%;
+        min-height: 100%;
+        padding: 15rem 0rem;
+    }
+}
+.module{
+    &__h3 {
+        @include Utilities.flex-row-alignItemsCenter-justifyContentCenter;
+        @include Utilities.styleNormal-weight700;
+        @include Utilities.size-3-6rem-height-3-1rem;
+        margin-bottom: 3.8rem;
+        text-align: center;
+    }
+    &__list{
+        @include Utilities.flex-row-justifyContentAround;
+        width:100%;
+    }
+    &__item{
+       @include Utilities.flex-column;
+        width: 24rem;
+    }
+    &__span{
+        @include Utilities.styleNormal-weight400;
+        @include Utilities.size-2-5rem-height-3-1rem;
+        margin-bottom: .2rem;
+    }
+    &__span--moreMargin{
+        margin-bottom:4rem;
+    }
+    &__b{
+        @include Utilities.styleNormal-weight550;
+        @include Utilities.size-2-5rem-height-3-1rem;
+        width: 27rem;
+    }
+}

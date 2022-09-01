@@ -1,0 +1,26 @@
+@use "../utilities/Utilities";
+
+.info {
+    &__h3 {
+        // font-family: 'Helvetica';
+        display: inline-block;
+        @include Utilities.styleNormal-weight700;
+        font-size: 3rem;
+        line-height: 3.6rem;
+    }
+
+    &__list {
+        // font-family: 'Helvetica Light';
+        @include Utilities.flex-column;
+        @include Utilities.styleNormal-weight400;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        width: 43rem;
+        margin-bottom: 9rem;
+    }
+
+    &__item {
+        margin-bottom: 2rem;
+    }
+
+}

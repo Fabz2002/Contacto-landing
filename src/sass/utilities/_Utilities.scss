@@ -1,0 +1,96 @@
+
+// $primary-color:#212529;
+// $secundary-color:#111111;
+// $terciary-color:#f5f9fa;
+// $label-color:#888888;
+// $blue-color:#0d6efd;
+// $gray-color:#4b4c4d;
+// $sidebar-color:#565758;
+// $white-secundary-color:#E1E4EA;
+// $unitREM:0.2rem;
+// $unitpx:1px;
+// $font-sizeGeneral:15px;
+
+// @function sizeEM($value){
+//     @return $value * $unitEM;
+// }
+// @function sizeREM($value){
+//     @return $value * $unitREM;
+// }
+
+@mixin flex-column{
+    display: flex;
+    flex-direction:column ;
+}
+
+@mixin flex-centerJustifyItems {
+    display: flex;
+    justify-items: center;
+}
+
+@mixin flex-row{
+    display: flex;
+    flex-direction: row ;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-row-alignItemsCenter-justifyContentCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-column-alignItemsCenter-justifyContentCenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-row-justifyContentBetween {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@mixin flex-row-justifyContentAround {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+@mixin flex-row-justifyContentCenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+@mixin styleNormal-weight700{
+    font-style: normal;
+    font-weight: 700;
+}
+
+@mixin styleNormal-weight400{
+    font-style: normal;
+    font-weight: 400;
+}
+
+@mixin styleNormal-weight550{
+    font-style: normal;
+    font-weight: 550;
+}
+@mixin size-2-5rem-height-3-1rem{
+    font-size: 2.5rem;
+    line-height:3.1rem;
+}
+@mixin size-3-6rem-height-3-1rem{
+    font-size: 3.6rem;
+    line-height:3.1rem;
+}
+
+@mixin config-Containers {
+    min-height: 100vh;
+    border-top: 2px solid  #CBCBCB;
+    padding-top: 12.5rem;
+    margin: 6.25rem 5rem;
+}

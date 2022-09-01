@@ -1,0 +1,354 @@
+@charset "UTF-8";
+/*
+  Con este reset vamos a resolver:
+    👉 Unificar el uso de Custom Properties
+    👉 Problemas de box-model más generales
+    👉 Problemas con imagenes, vídeos e iconos svg
+    👉 Problemas con tipografías y etiquetas input en formularios
+    👉 Unificar la tipografía de todas las etiquetas de una web
+*/
+/* usado para obtener los iconos */
+/* Aquí definimos las Custom properties */
+:root {
+  --negro: #000;
+  --blanco: #fff;
+  /* Tipografía */
+  --tipo-principal: Helvetica, sans-serif;
+  --tipo-secundaria: Verdana;
+}
+
+/* Opcional */
+/* Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* Reseteamos los margin y paddings de todas las etiquetas */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+/* Evitamos problemas con las imagenes */
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+/* Reseteamos los enlaces para funcionar como cajas... */
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+/* ... excepto los que se encuentran en párrafos */
+p a {
+  display: inline;
+}
+
+/* Quitamos los puntos de los <li> */
+li {
+  list-style-type: none;
+}
+
+/* Configuramos anclas suaves */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Desactivamos estilos por defecto de las principales etiquetas de texto */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Evitamos problemas con los pseudoelementos de quotes */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+/* Configuramos el texto que seleccionamos */
+/* Nivelamos problemas de tipografías y colocación de formularios */
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+}
+
+/* Reseteamos las tablas */
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Evitamos problemas con los SVG */
+svg {
+  width: 100%;
+  display: block;
+}
+
+/* Configuramos la tipografía para toda la web */
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--tipo-principal);
+  color: var(--negro);
+  /* opcional */
+  hyphens: auto;
+  /* opcional */
+  font-smooth: always;
+  /* opcional */
+  -webkit-font-smoothing: antialiased;
+  /* opcional */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dashboard__containerSiempreConectados {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.containerSiempreConectados__titulo {
+  max-width: 80rem;
+  margin: 0rem 5rem;
+  justify-content: center;
+}
+.containerSiempreConectados__h1 {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 9rem;
+  line-height: 10rem;
+  padding-top: 16rem;
+}
+.containerSiempreConectados__containerInversoresAccionistas {
+  margin: 0rem 5rem;
+  margin-top: 41.5rem;
+}
+
+.containerInversoresAccionistas__subtitulo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10.25rem;
+}
+.containerInversoresAccionistas__h2 {
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 6rem;
+}
+.containerInversoresAccionistas__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.dashboard__containerContactosCorporativos {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  border-top: 2px solid #CBCBCB;
+  padding-top: 12.5rem;
+  margin: 6.25rem 5rem;
+}
+
+.containerContactosCorporativos__subtitulo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10.25rem;
+}
+.containerContactosCorporativos__h2 {
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 6rem;
+}
+.containerContactosCorporativos__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.dashboard__containerContactoTalento {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  border-top: 2px solid #CBCBCB;
+  padding-top: 12.5rem;
+  margin: 6.25rem 5rem;
+}
+
+.containerContactoTalento__subtitulo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10.25rem;
+}
+.containerContactoTalento__h2 {
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 6rem;
+}
+.containerContactoTalento__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.dashboard__containerInformacionCorporativa {
+  display: flex;
+  flex-direction: row;
+  margin: 0rem 5rem;
+  min-height: 100vh;
+  border-top: 2px solid #CBCBCB;
+  padding-top: 12.5rem;
+  margin: 6.25rem 5rem;
+  padding-bottom: 6rem;
+}
+
+.containerInformacionCorporativa__module {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #EDEDED;
+  width: 100%;
+  min-height: 100%;
+  padding: 15rem 0rem;
+}
+
+.module__h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.6rem;
+  line-height: 3.1rem;
+  margin-bottom: 3.8rem;
+  text-align: center;
+}
+.module__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+.module__item {
+  display: flex;
+  flex-direction: column;
+  width: 24rem;
+}
+.module__span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 3.1rem;
+  margin-bottom: 0.2rem;
+}
+.module__span--moreMargin {
+  margin-bottom: 4rem;
+}
+.module__b {
+  font-style: normal;
+  font-weight: 550;
+  font-size: 2.5rem;
+  line-height: 3.1rem;
+  width: 27rem;
+}
+
+.info__h3 {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.6rem;
+}
+.info__list {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  width: 43rem;
+  margin-bottom: 9rem;
+}
+.info__item {
+  margin-bottom: 2rem;
+}
+
+.info__h3 {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.6rem;
+}
+.info__list {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  width: 43rem;
+  margin-bottom: 9rem;
+}
+.info__item {
+  margin-bottom: 2rem;
+}
+
+.dashboard {
+  min-height: 100vh;
+  position: relative;
+}
+.dashboard__img {
+  position: absolute;
+  z-index: -1;
+}
+
+/*# sourceMappingURL=styles.css.map */
