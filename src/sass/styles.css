@@ -158,11 +158,12 @@ body {
   justify-content: center;
 }
 .containerSiempreConectados__h1 {
-  display: inline-block;
+  background: linear-gradient(105.05deg, #FFB21A 10.38%, #FEAE14 55.07%, #FC4741 79.94%);
   font-weight: 700;
   font-size: 9rem;
   line-height: 10rem;
   padding-top: 16rem;
+  width: max-content;
 }
 .containerSiempreConectados__containerInversoresAccionistas {
   margin: 0rem 5rem;
@@ -184,6 +185,27 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.info__h3 {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.6rem;
+}
+.info__list {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  width: 43rem;
+  margin-bottom: 9rem;
+}
+.info__item {
+  margin-bottom: 2rem;
 }
 
 .dashboard__containerContactosCorporativos {
@@ -298,48 +320,6 @@ body {
   font-size: 2.5rem;
   line-height: 3.1rem;
   width: 27rem;
-}
-
-.info__h3 {
-  display: inline-block;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 3rem;
-  line-height: 3.6rem;
-}
-.info__list {
-  display: flex;
-  flex-direction: column;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 2.5rem;
-  line-height: 3rem;
-  width: 43rem;
-  margin-bottom: 9rem;
-}
-.info__item {
-  margin-bottom: 2rem;
-}
-
-.info__h3 {
-  display: inline-block;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 3rem;
-  line-height: 3.6rem;
-}
-.info__list {
-  display: flex;
-  flex-direction: column;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 2.5rem;
-  line-height: 3rem;
-  width: 43rem;
-  margin-bottom: 9rem;
-}
-.info__item {
-  margin-bottom: 2rem;
 }
 
 .dashboard {

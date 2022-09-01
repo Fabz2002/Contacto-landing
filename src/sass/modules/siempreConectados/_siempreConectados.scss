@@ -1,5 +1,6 @@
 
 @use "../../utilities/Utilities";
+@use "../../conponents/component";
 .dashboard__containerSiempreConectados {
     @include Utilities.flex-column;
     min-height: 100vh;
@@ -17,13 +18,13 @@
     }
 
     &__h1 {
-        // background: linear-gradient(105.05deg, #FFB21A 10.38%, #FEAE14 55.07%, #FC4741 79.94%);
-        display: inline-block;
+        background: linear-gradient(105.05deg, #FFB21A 10.38%, #FEAE14 55.07%, #FC4741 79.94%);
+        
         font-weight: 700;
         font-size: 9rem;
         line-height: 10rem;
         padding-top: 16rem;
-
+        width: max-content;
     }
 
     &__containerInversoresAccionistas {
@@ -51,6 +52,8 @@
     }
 
 }
+
+@include component.info;
 
 
 
